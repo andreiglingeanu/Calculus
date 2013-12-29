@@ -1,0 +1,81 @@
+body {
+  background: #2d2d2d;
+}
+.logo h1 {
+  color: #D6D3D3;
+  font-family: 'Ultra', serif;
+  -webkit-transition: text-shadow 1s ease-out;
+  -moz-transition: text-shadow 1s ease-out;
+  transition: text-shadow 1s ease-out;
+  text-shadow: 0px 0px 24px rgba(182, 182, 25, 0.34);
+  text-align: center;
+  font-size: 6em;
+  letter-spacing: 6px;
+}
+.logo:hover {
+  border: none;
+  text-decoration: none;
+}
+.logo:hover h1 {
+  text-shadow: 0px 0px 24px rgba(182, 182, 25, 0.82);
+}
+
+.main {
+  background: white;
+  min-height: 500px;
+  margin: 50px 0;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.highlight {
+  -webkit-box-shadow: 0px 0px 20px rgba(182, 182, 25, 0.44);
+  -moz-box-shadow:    0px 0px 20px rgba(182, 182, 25, 0.44);
+  box-shadow:         0px 0px 20px rgba(182, 182, 25, 0.44);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.highlight:hover,
+.highlight:focus {
+  -webkit-box-shadow: 0px 0px 20px rgba(182, 182, 25, 1) !important;
+  -moz-box-shadow:    0px 0px 20px rgba(182, 182, 25, 1) !important;
+  box-shadow:         0px 0px 20px rgba(182, 182, 25, 1) !important;
+}
+
+.not-found {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.not-found h1 {
+  color: #D57272;
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.not-found > div {
+  font-size: 25px;
+}
+
+.search input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 80%;
+  display: block;
+  margin: auto;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 3em;
+  padding: .5em;
+  border-radius: 20px;
+}
+
+.home .search {
+  margin-top: 100px;
+}
+
+.block-result {
+
+}

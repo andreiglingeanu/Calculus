@@ -1,0 +1,8 @@
+<div class="main highlight">
+  <% result.each do |interes, hash| %>
+    <article class="block-result">
+      <h1><%= hash[:translation] %></h1>
+      <img src="<%= hash[:img] %>" alt="<%= hash[:plaintext] %>">
+    </article>
+  <% end %>
+</div>
