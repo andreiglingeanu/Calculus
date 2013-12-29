@@ -1,8 +1,8 @@
 <div class="main highlight">
   <% result.each do |interes, hash| %>
-    <article class="block-result">
-      <h1><%= hash[:translation] %></h1>
+    <fieldset class="block-result">
+      <legend><%= hash[:translation] %></legend>
       <img src="<%= hash[:img] %>" alt="<%= hash[:plaintext] %>">
-    </article>
+    </fieldset>
   <% end %>
 </div>

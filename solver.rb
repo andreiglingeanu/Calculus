@@ -11,8 +11,11 @@ class Solver
       :derivative          => /derivative/i,
       :root                => /root (?!plot)/i,
       :approximation       => /approximation/i,
-      :solution            => /solution/i
+      :solution            => /solution/i,
+      :dimensions          => /dimensions/i,
+      :determinant         => /determinant/i
     }
+
     @translations = {
       :input               => "Date de intrare",
       :result              => "Rezultat",
@@ -21,7 +24,9 @@ class Solver
       :derivative          => "Derivata",
       :root                => "Zeroul",
       :approximation       => "Aproximarea",
-      :solution            => "Soluție"
+      :solution            => "Soluție",
+      :dimensions          => "Dimensiuni",
+      :determinant         => "Determinant"
     }
   end
 
