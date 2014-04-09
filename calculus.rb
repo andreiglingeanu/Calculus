@@ -18,10 +18,14 @@ class Calculus < Sinatra::Application
     end
   end
 
-
-  get '/matrices' do
-    erb :matrices, layout: :main
+  get '/examples' do
+    erb :examples, layout: :main
   end
+
+  get '/about' do
+    erb :about, layout: :main
+  end
+
 
   set :public_folder, File.dirname(__FILE__) + '/static'
 end
