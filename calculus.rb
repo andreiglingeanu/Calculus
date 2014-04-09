@@ -1,6 +1,8 @@
 class Calculus < Sinatra::Application
   register Sinatra::Reloader
 
+  helpers TemplateHelpers
+
   get '/' do
     erb :index, layout: :main
   end
@@ -14,6 +16,11 @@ class Calculus < Sinatra::Application
     else
       erb :notfound, layout: :main
     end
+  end
+
+
+  get '/matrices' do
+    erb :matrices, layout: :main
   end
 
   set :public_folder, File.dirname(__FILE__) + '/static'

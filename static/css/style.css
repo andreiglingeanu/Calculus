@@ -98,3 +98,17 @@ body {
 .block-result img {
 
 }
+
+.home .button-group {
+  margin-top: 90px;
+  width: 395px;
+}
+
+/*********************************************************************
+ *                              footer                               *
+ *********************************************************************/
+.footer {
+  min-height: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
