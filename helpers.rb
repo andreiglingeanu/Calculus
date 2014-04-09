@@ -14,7 +14,7 @@ module TemplateHelpers
 <div class="search">
   <form action="/query" method="get" class="">
     <input autofocus class="highlight" type="text" placeholder="Tapați" name="q" id="q">
-    <span class="icon-gears"></span>
+    <span class="icon-gears icon-large"></span>
   </form>
 </div>
     HTML
