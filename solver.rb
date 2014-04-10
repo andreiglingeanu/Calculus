@@ -6,12 +6,13 @@ class Solver
     @interesed_in = {
       :input               => /input/i,
       :result              => /result/i,
-      :indefinite_integral => /^indefinite integral/i,
-      :definite_integral   => /^definite integral/i,
-      :derivative          => /derivative/i,
-      :root                => /root (?!plot)/i,
-      :approximation       => /approximation/i,
+      :form                => /alterna/i,
       :solution            => /solution/i,
+      :root                => /root (?!plot)/i,
+      :derivative          => /derivative/i,
+      :definite_integral   => /^definite integral/i,
+      :indefinite_integral => /^indefinite integral/i,
+      :approximation       => /approximation/i,
       :dimensions          => /dimensions/i,
       :determinant         => /determinant/i
     }
@@ -26,7 +27,8 @@ class Solver
       :approximation       => "Aproximarea",
       :solution            => "Soluție",
       :dimensions          => "Dimensiuni",
-      :determinant         => "Determinant"
+      :determinant         => "Determinant",
+      :form                => "Forme alternative"
     }
   end
 
