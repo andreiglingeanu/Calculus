@@ -12,7 +12,7 @@ class Calculus < Sinatra::Application
     unless query.blank?
       result = Solver.new(query).all
       erb :result, layout: :main,
-        locals: { query: query, result: result }
+                 locals: { query: query, result: result }
     else
       erb :notfound, layout: :main
     end
@@ -25,7 +25,6 @@ class Calculus < Sinatra::Application
   get '/about' do
     erb :about, layout: :main
   end
-
 
   set :public_folder, File.dirname(__FILE__) + '/static'
 end

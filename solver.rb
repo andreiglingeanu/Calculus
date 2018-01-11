@@ -46,7 +46,7 @@ class Solver
     plaintexts = {}
     responses.map do |interes, response|
       plaintexts[interes] =
-        { plaintext: response.plaintext, translation: @translations[interes]}
+        { plaintext: response.plaintext, translation: @translations[interes] }
     end
     plaintexts
   end
@@ -55,7 +55,7 @@ class Solver
     imgs = {}
     responses.map do |interes, response|
       imgs[interes] =
-        { img: response.img["src"], translation: @translations[interes]}
+        { img: response.img["src"], translation: @translations[interes] }
     end
     imgs
   end
@@ -63,7 +63,7 @@ class Solver
   def all
     all = {}
     responses.map do |interes, response|
-      all[interes] = { 
+      all[interes] = {
         img: response.img["src"],
         translation: @translations[interes],
         plaintext: response.plaintext

@@ -9,4 +9,5 @@ Bundler.require
 require './solver.rb'
 require './example.rb'
 require './calculus.rb'
+
 run Calculus
